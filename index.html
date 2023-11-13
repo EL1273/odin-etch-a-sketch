@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch-a-Sketch</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="game.js" defer></script>
+</head>
+
+<body onload="setup()">
+  <div id="container">
+  </div>
+  <button id="restart"> Restart </button>
+  <button id="resize"> Grid Size</button>
+  <div id="resizePopup" class="popup">
+    <h2> Resize </h2>
+    <p> this is a popup</p>
+    <form>
+      <label for="grid-size"> New Grid Size </label><br>
+      <input type="text" id="grid-size" name="grid-size" maxlength="2"><br>
+    </form>
+    <button id="make-grid"> Make new grid </button>
+    <button id="closePopup"> Close </button>
+  </div>
+</body>
+
+</html>
