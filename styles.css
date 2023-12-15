@@ -1,6 +1,29 @@
+#title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  background-color: black;
+  font-size: 32px;
+  padding: 30px;
+  margin: 10px;
+}
+
+
+#side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(57, 132, 198);
+  width: 300px;
+  align-self: stretch;
+}
+
 body {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   justify-content: center;
   height: 100%;
   background-color: bisque;
@@ -10,7 +33,6 @@ body {
   border-style: solid;
   border-color: black;
   background-color: aliceblue;
-  padding: 10px;
 }
 
 .row {
@@ -18,19 +40,35 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  width: 600px;
+  width: 400px;
 }
 
-#container {
+#grid-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   flex-grow: 0;
   flex-shrink: 0;
   background: red;
+  padding: 10px;
+  margin: 20px;
+}
+
+
+#container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  flex-shrink: 0;
+  height: 0px;
+  padding: 50px;
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
 }
 
 .popup {
