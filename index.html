@@ -18,16 +18,22 @@
       </div>
       <div id="side-bar">
         <button id="restart"> Restart </button>
-        <button id="resize"> Grid Size</button>
+        <button id="resize"> Change Grid </button>
+        <button id="show-grid"> Grid Off </button>
+        <div id="slideContainer">
+          <div id="sliderValue">350</div>
+          <input type="range" min="350" max="600" value="1" id="size-slider">
+        </div>
       </div>
     </div>
   </div>
+  <div id="footer">
+
+  </div>
   <div id="resizePopup" class="popup">
-    <h2> Resize </h2>
-    <p> this is a popup</p>
+    <div class="popup-title"> New Grid Size </div>
     <form>
-      <label for="grid-size"> New Grid Size </label><br>
-      <input type="text" id="grid-size" name="grid-size" maxlength="2"><br>
+      <input type="text" id="popup-input" maxlength="2"><br>
     </form>
     <button id="make-grid"> Make new grid </button>
     <button id="closePopup"> Close </button>
